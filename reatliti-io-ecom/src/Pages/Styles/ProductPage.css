@@ -1,0 +1,18 @@
+.product-container {
+  width: 100%;
+  background: rgb(249, 95, 39);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-container > .prodBox {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minMax(240px, 1fr));
+  gap: 40px;
+}

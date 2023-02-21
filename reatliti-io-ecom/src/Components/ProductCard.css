@@ -1,0 +1,81 @@
+.prodCardContainer {
+  /* border: 1px solid white; */
+  width: 260px;
+  height: auto;
+  background-color: rgb(95, 202, 255);
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prodCardContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.innerBox {
+  width: 80%;
+  margin: auto;
+
+  text-align: center;
+}
+.innerBox > h5 {
+  text-align: center;
+  color: rgb(8, 5, 5);
+}
+
+.prodCardContainer > img {
+  width: 160px;
+  height: 180px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.prodCardContainer > div {
+  height: 40px;
+}
+.prodCardContainer > .addtoCart {
+  width: 90%;
+  margin: auto;
+  display: flex;
+
+  gap: 10px;
+}
+button {
+  border: none;
+  background-color: rgb(161, 38, 116);
+  padding: 12px 10px;
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.addtoCart > div {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  align-items: center;
+}
+
+.prodCardContainer > .addtoCart > div input {
+  border: none;
+  text-align: center;
+  padding: 8px 6px;
+
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.prodCardContainer > .addtoCart > div label {
+  border: none;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+input {
+  border: none;
+  text-align: center;
+  padding: 10px 2px;
+
+  border-radius: 6px;
+  font-size: 16px;
+}

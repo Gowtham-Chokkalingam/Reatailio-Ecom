@@ -1,0 +1,13 @@
+.homepage-continer {
+  width: 100%;
+  background: rgb(249, 95, 39);
+  height: 89.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-continer > div {
+  text-align: center;
+  color: white;
+}
