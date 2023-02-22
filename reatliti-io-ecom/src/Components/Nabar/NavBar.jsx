@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navList } from "./MenuList";
 import "./Navbar.css";
-
+import { BsCart4 } from "react-icons/bs";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const menuList = navList.map(({ url, title }, index) => {
     return (
       <li key={index}>
         <NavLink to={url} activeclassname="active">
-          {title}
+          {title} {title === "Cart" && <BsCart4></BsCart4>}
         </NavLink>
       </li>
     );

@@ -14,12 +14,14 @@ const CartPage = () => {
   };
 
   const handleItemInCart = (id, qty) => {
+    console.log('qty:', qty)
     let exist = cartList.find((ele) => ele.id === id);
 
     exist = { ...exist, qty: parseInt(qty) };
     let updated = cartList.filter((ele) => ele.id !== id);
     updated = [...updated, exist];
     localStorage.setItem("cart", JSON.stringify(updated));
+    setProdData(updated);
   };
 
   return (

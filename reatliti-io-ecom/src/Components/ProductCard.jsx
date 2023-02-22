@@ -18,7 +18,7 @@ const ProductCard = ({ data, handleAddCart }) => {
       </div>
       <div style={{ display: "flex", gap: "2px", marginLeft: "4px" }}>
         <GiPriceTag></GiPriceTag>
-        <h5>Price: {data.price}</h5>
+        <h5>Price: {(data.price * qty).toFixed(2)}</h5>
       </div>
       <div style={{ display: "flex", gap: "2px", marginLeft: "4px" }}>
         <AiOutlineStar></AiOutlineStar>
@@ -42,7 +42,7 @@ const ProductCard = ({ data, handleAddCart }) => {
             placeholder="Qty"
             type="number"
             min="1"
-            max="12"
+          
             onChange={(e) => setQty(e.target.value)}
           ></input>
         </div>
