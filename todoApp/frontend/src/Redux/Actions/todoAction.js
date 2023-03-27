@@ -122,3 +122,9 @@ export const deleteAppliedJobAction = (id) => async (dispatch, getState) => {
 export const appliedJobListReset = () => async (dispatch) => {
   dispatch({ type: APPLY_JOBLIST_REST });
 };
+
+
+
+// leave policy its metioned in exbit B
+// 3 years bond 60days ? 
+// Sp
